@@ -1,0 +1,125 @@
+/* Compartido entre .aboutMeInfo y .fixedAM para no repetir */
+.aboutMeInfo,
+.fixedAM {
+  margin-left: 50%;
+  padding-right: 8%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 100vh;
+  background: linear-gradient(160deg, #ffffff 0%, #f0f0f0 50%, #e8e8e8 100%);
+  border-left: 3px solid var(--colour-main-2-dark);
+  box-shadow: inset 6px 0 24px rgba(0, 0, 0, 0.04);
+}
+
+.aboutMeInfo {
+  position: absolute;
+  margin-top: 100vh;
+}
+
+.fixedAM {
+  position: fixed;
+}
+
+#aboutMeInfo > h2 {
+  padding-top: 100px;
+  font-family: var(--subtitle-font);
+  font-size: 35px;
+
+  /* Gradient clip en el título igual que el h1 del Home — coherencia visual */
+  background: linear-gradient(
+    120deg,
+    var(--colour-main-1) 0%,
+    #3a3a3a 60%,
+    var(--colour-main-2-dark) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Línea decorativa bajo el h2 — mismo patrón que el Home */
+#aboutMeInfo > h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--colour-main-2-dark), transparent);
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+#aboutMeP {
+  color: var(--colour-main-1);
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.infoDiv {
+  /* Fondo translúcido con ligero tinte verde en cada card de info */
+  background: linear-gradient(
+    135deg,
+    rgba(141, 248, 141, 0.06) 0%,
+    rgba(245, 245, 245, 0.4) 100%
+  );
+  border-left: 2px solid rgba(78, 196, 78, 0.3);
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  backdrop-filter: blur(4px);
+}
+
+.infoTitle {
+  color: var(--colour-main-1);
+  font-family: var(--subtitle-font);
+  font-size: 18px;
+  margin-bottom: 8px;
+  letter-spacing: 0.03em;
+}
+
+.infoP {
+  color: #3a3a3a;
+  font-family: var(--text-font);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* ---------MEDIAS--------- */
+
+@media (max-width: 1024px) {
+  .aboutMeInfo,
+  .fixedAM {
+    margin-left: 0%;
+    padding-right: 35%;
+    padding-left: 5%;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 450px) {
+  .aboutMeInfo,
+  .fixedAM {
+    margin-left: 0%;
+    padding-right: 25%;
+    padding-left: 5%;
+    gap: 40px;
+  }
+
+  #aboutMeInfo > h2 {
+    font-size: 25px;
+  }
+
+  #aboutMeP {
+    font-size: 12px;
+  }
+
+  .infoTitle {
+    font-size: 12px;
+  }
+
+  .infoP {
+    font-size: 10px;
+  }
+}

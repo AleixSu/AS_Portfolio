@@ -1,0 +1,221 @@
+.contactMeContent,
+.fixedCM {
+  margin-left: 50%;
+  padding-right: 15%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(
+    160deg,
+    var(--colour-main-2-light) 0%,
+    var(--colour-main-2) 45%,
+    var(--colour-main-2-dark) 100%
+  );
+  border-left: 3px solid var(--colour-main-2-dark);
+  box-shadow: inset 6px 0 24px rgba(0, 0, 0, 0.04);
+}
+
+.contactMeContent {
+  position: absolute;
+  margin-top: 570vh;
+  color: black;
+}
+
+.fixedCM {
+  position: fixed;
+  padding-left: 5%;
+  gap: 40px;
+  color: var(--colour-main-1);
+}
+
+.contactMeDiv {
+  padding-left: 10%;
+}
+
+.contactMeTitle {
+  color: var(--colour-main-1);
+  padding-top: 100px;
+  font-family: var(--subtitle-font);
+  font-size: 35px;
+  margin-bottom: 80px;
+}
+
+.contactMeTitle::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--colour-main-1), transparent);
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+#contactMeInfoDiv > h4 {
+  font-family: var(--subtitle-font);
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+#contactMeInfoDiv > p {
+  font-family: var(--text-font);
+}
+
+#contactMeInfoDiv {
+  margin-bottom: 80px;
+}
+
+#contactMeForm {
+  width: 100%;
+}
+
+.inputPackDiv {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.inputDiv {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-family: var(--text-font);
+}
+
+.inputDiv > label,
+.inputMessageDiv > label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.inputDiv > input {
+  height: 60px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid var(--colour-main-1);
+  background-color: transparent;
+}
+
+.inputDiv > input::placeholder {
+  color: var(--colour-main-2);
+  filter: brightness(0.8);
+}
+
+.inputMessageDiv {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-family: var(--text-font);
+  overflow-y: auto;
+}
+
+.inputMessageDiv > label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.inputMessageDiv > textarea {
+  height: 120px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid var(--colour-main-1);
+  background-color: transparent;
+  font-family: var(--text-font);
+}
+
+.inputMessageDiv > textarea::placeholder {
+  font-family: var(--text-font);
+  font-size: 18px;
+  font-weight: 360;
+  letter-spacing: -1px;
+  color: var(--colour-main-2);
+  filter: brightness(0.8);
+}
+
+#sendMessageButton > button {
+  margin-top: 50px;
+  height: 50px;
+  width: 25%;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .contactMeContent,
+  .fixedCM {
+    margin-left: 0%;
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 5%;
+    gap: 60px;
+  }
+
+  #sendMessageButton > button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  .contactMeDiv {
+    padding-left: 5%;
+  }
+
+  #contactMeInfoDiv {
+    margin-bottom: 40px;
+  }
+
+  #contactMeInfoDiv > h4 {
+    font-size: 15px;
+  }
+
+  .contactMeTitle {
+    font-size: 25px;
+  }
+
+  #contactMeInfoDiv > p {
+    font-size: 12px;
+  }
+
+  .inputPackDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contactMeForm {
+    width: 100%;
+  }
+
+  .inputDiv > label {
+    font-size: 8px;
+  }
+
+  .inputDiv > input {
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+  .inputMessageDiv > label {
+    font-size: 8px;
+  }
+
+  .inputMessageDiv > textarea {
+    height: 80px;
+  }
+
+  .inputMessageDiv > textarea::placeholder {
+    font-size: 13px;
+  }
+
+  #sendMessageButton > button {
+    margin-top: 30px;
+    height: 40px;
+    width: 100%;
+    font-size: 13px;
+  }
+}
