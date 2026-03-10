@@ -29,13 +29,13 @@ export const projectArray = [
   {
     projectName: 'Portfolio',
     projectVID: './vids/portfolio.mp4',
-    projectGH: 'Project number 3',
-    projectURL: 'Project number 2'
+    projectGH: 'https://github.com/AleixSu/AS_Portfolio',
+    projectURL: 'https://www.aleixsuero.dev/'
   },
   {
     projectName: 'Eventia Web',
     projectVID: './vids/eventiaWeb.mp4',
-    projectGH: 'Project number 3',
-    projectURL: 'Project number 3'
+    projectGH: 'https://github.com/AleixSu/Eventia_FrontEnd',
+    projectURL: 'https://project13-final-project-front-end.vercel.app/'
   }
 ]
