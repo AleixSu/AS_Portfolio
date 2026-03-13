@@ -35,8 +35,9 @@ const SkillsAndExp = () => {
           {logoArrays.map((logo, i) => (
             <SkillCard
               key={i}
-              logo={logo}
+              logo={logo.img}
               ref={(cardS) => (observerRefs.current[i] = cardS)}
+              nameSkill={logo.nameSkill}
             />
           ))}
         </div>

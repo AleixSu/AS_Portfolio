@@ -79,14 +79,35 @@
   border-radius: 10px;
   padding: 10px;
   backdrop-filter: blur(4px);
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: all 0.3s ease-in-out;
+}
+
+.logos > .nameSkillDiv {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  left: 0px;
+  color: transparent;
+  transition: all 0.3s 0.3s ease-in-out;
+}
+.nameSkillDiv > h5 {
+  width: 100%;
+  text-align: center;
+}
+.logos > img {
+  transition: all 0.3s 0.3s ease-in-out;
 }
 
 .logos:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.logos:hover > div {
+  color: var(--colour-main-1);
+}
+.logos:hover > img {
+  filter: blur(5px);
 }
 
 .logos > img {
@@ -208,5 +229,8 @@
 
   .logos {
     width: 19%;
+  }
+  .nameSkillDiv > h5 {
+    font-size: 12px;
   }
 }

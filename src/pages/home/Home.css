@@ -185,8 +185,9 @@
 
 #decoDiv {
   position: absolute;
-  width: 5000px;
-  height: 800px;
+
+  width: 300vw;
+  height: 800vh;
   background: linear-gradient(
     105deg,
     rgba(245, 245, 245, 0.68) 0%,

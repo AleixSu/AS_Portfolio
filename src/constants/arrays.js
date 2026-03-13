@@ -1,16 +1,16 @@
 export const logoArrays = [
-  './images/html-5.png',
-  './images/css-3.png',
-  './images/javaScriptLogo.png',
-  './images/nodeLogo.png',
-  './images/gitHubLogo.png',
-  './images/React-icon.svg.png',
-  './images/cloudinaryLogo.png',
-  './images/expressLogo.png',
-  './images/JWTLogo.png',
-  './images/mongodblogo.png',
-  './images/TQLogo.png',
-  './images/mongoose.png'
+  { nameSkill: 'HTML', img: './images/html-5.png' },
+  { nameSkill: 'CSS', img: './images/css-3.png' },
+  { nameSkill: 'JavaScript', img: './images/javaScriptLogo.png' },
+  { nameSkill: 'Node.js', img: './images/nodeLogo.png' },
+  { nameSkill: 'GitHub', img: './images/gitHubLogo.png' },
+  { nameSkill: 'React', img: './images/React-icon.svg.png' },
+  { nameSkill: 'Cloudinary', img: './images/cloudinaryLogo.png' },
+  { nameSkill: 'Express', img: './images/expressLogo.png' },
+  { nameSkill: 'JWT', img: './images/JWTLogo.png' },
+  { nameSkill: 'MongoDB', img: './images/mongodblogo.png' },
+  { nameSkill: 'TanStack Query', img: './images/TQLogo.png' },
+  { nameSkill: 'Mongoose', img: './images/mongoose.png' }
 ]
 
 export const projectArray = [
