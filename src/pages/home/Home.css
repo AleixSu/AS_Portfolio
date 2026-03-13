@@ -139,7 +139,9 @@
 }
 
 .backgroundPhoto {
-  height: 1020px;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
   filter: saturate(0.03) blur(3px);
 }
 
