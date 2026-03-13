@@ -168,6 +168,11 @@
 }
 
 @media (max-width: 1000px) {
+  .expDiv > p {
+    width: 100%;
+    font-size: 10px;
+  }
+
   .skillsDiv {
     width: 90%;
     padding-left: 5%;

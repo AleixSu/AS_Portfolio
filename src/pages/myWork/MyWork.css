@@ -179,10 +179,18 @@
 @media (max-width: 450px) {
   .myWorkTitle {
     font-size: 25px;
+    padding-top: 30px;
+  }
+  #cardDiv {
+    height: 60vh;
+    gap: 10px;
   }
 
+  .projectCardDiv {
+    height: 26vh;
+  }
   .projectCard {
-    height: 20vh;
+    height: 26vh;
   }
 
   .projectTag {

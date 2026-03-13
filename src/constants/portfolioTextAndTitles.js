@@ -21,7 +21,13 @@ export const textAndTitles = {
     contactMeLabelM: 'Your message',
     contactMePH3:
       "Hi!! So.. I have this idea and I think your are the best for this job. Let's discuss it.",
-    contactMeSend: "Let's Do it!"
+    contactMeSend: "Let's Do it!",
+    errorName: 'Name is required',
+    errorEmail: 'Email is required',
+    errorMessage: 'Message is required',
+    successfullForm: 'Message sent successfully!',
+    unsuccessfullForm: ' Something went wrong, please try again.',
+    formLoadingText: 'Sending'
   },
   ES: {
     mainH3: 'En progreso',
@@ -47,6 +53,12 @@ export const textAndTitles = {
     contactMeLabelM: 'Tu mensaje',
     contactMePH3:
       '¡Hola! Tengo esta idea y creo que eres la persona indicada para este trabajo. ¡Hablemos de ello!',
-    contactMeSend: 'Empecemos!'
+    contactMeSend: 'Empecemos!',
+    errorName: 'Introduzca un nombre',
+    errorEmail: 'Introduzca un correo',
+    errorMessage: 'Te falta el mensaje!',
+    successfullForm: 'El mensaje ha sido enviado!',
+    unsuccessfullForm: ' Ha ocurrido un error, por favor intente de nuevo.',
+    formLoadingText: 'Enviando'
   }
 }

@@ -65,7 +65,7 @@ const ContactMe = () => {
                 <input
                   id='name'
                   placeholder={textAndTitlesCL.contactMePH1}
-                  {...register('name', { required: 'Name is required' })}
+                  {...register('name', { required: textAndTitlesCL.errorName })}
                 />
                 {errors.name && (
                   <span className='errorMsg'>{errors.name.message}</span>
@@ -78,7 +78,9 @@ const ContactMe = () => {
                   id='email'
                   type='email'
                   placeholder={textAndTitlesCL.contactMePH2}
-                  {...register('email', { required: 'Email is required' })}
+                  {...register('email', {
+                    required: textAndTitlesCL.errorEmail
+                  })}
                 />
                 {errors.email && (
                   <span className='errorMsg'>{errors.email.message}</span>
@@ -91,7 +93,9 @@ const ContactMe = () => {
               <textarea
                 id='message'
                 placeholder={textAndTitlesCL.contactMePH3}
-                {...register('message', { required: 'Message is required' })}
+                {...register('message', {
+                  required: textAndTitlesCL.errorMessage
+                })}
               />
               {errors.message && (
                 <span className='errorMsg'>{errors.message.message}</span>
@@ -103,7 +107,7 @@ const ContactMe = () => {
                 type={'submit'}
                 text={
                   status === 'loading'
-                    ? 'Sending...'
+                    ? textAndTitlesCL.formLoadingText
                     : textAndTitlesCL.contactMeSend
                 }
                 className={'contactButtonLight'}
@@ -111,11 +115,13 @@ const ContactMe = () => {
             </div>
 
             {status === 'success' && (
-              <p className='statusMsg success'>Message sent successfully!</p>
+              <p className='statusMsg success'>
+                {textAndTitlesCL.successfullForm}
+              </p>
             )}
             {status === 'error' && (
               <p className='statusMsg error'>
-                Something went wrong, please try again.
+                {textAndTitlesCL.unsuccessfullForm}
               </p>
             )}
           </form>
