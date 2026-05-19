@@ -6,11 +6,12 @@ export const logoArrays = [
   { nameSkill: 'Node.js', img: './images/nodeLogo.png' },
   { nameSkill: 'Express', img: './images/expressLogo.png' },
   { nameSkill: 'JWT', img: './images/JWTLogo.png' },
+  { nameSkill: 'Mongoose', img: './images/mongoose.png' },
   { nameSkill: 'MongoDB', img: './images/mongodblogo.png' },
   { nameSkill: 'Cloudinary', img: './images/cloudinaryLogo.png' },
+  { nameSkill: 'Puppeteer', img: './images/puppeteer.png' },
   { nameSkill: 'React', img: './images/React-icon.svg.png' },
   { nameSkill: 'TanStack Query', img: './images/TQLogo.png' },
-  { nameSkill: 'Mongoose', img: './images/mongoose.png' },
   { nameSkill: 'Tailwind', img: './images/tailwind.png' },
   { nameSkill: 'GitHub', img: './images/gitHubLogo.png' }
 ]
