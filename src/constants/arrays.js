@@ -10,7 +10,8 @@ export const logoArrays = [
   { nameSkill: 'JWT', img: './images/JWTLogo.png' },
   { nameSkill: 'MongoDB', img: './images/mongodblogo.png' },
   { nameSkill: 'TanStack Query', img: './images/TQLogo.png' },
-  { nameSkill: 'Mongoose', img: './images/mongoose.png' }
+  { nameSkill: 'Mongoose', img: './images/mongoose.png' },
+  { nameSkill: 'Tailwind', img: './images/tailwind.png' }
 ]
 
 export const projectArray = [
