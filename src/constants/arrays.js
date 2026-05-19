@@ -2,6 +2,7 @@ export const logoArrays = [
   { nameSkill: 'HTML', img: './images/html-5.png' },
   { nameSkill: 'CSS', img: './images/css-3.png' },
   { nameSkill: 'JavaScript', img: './images/javaScriptLogo.png' },
+  { nameSkill: 'TypeScript', img: './images/typeScriptLogo.png' },
   { nameSkill: 'Node.js', img: './images/nodeLogo.png' },
   { nameSkill: 'GitHub', img: './images/gitHubLogo.png' },
   { nameSkill: 'React', img: './images/React-icon.svg.png' },
