@@ -4,15 +4,15 @@ export const logoArrays = [
   { nameSkill: 'JavaScript', img: './images/javaScriptLogo.png' },
   { nameSkill: 'TypeScript', img: './images/typeScriptLogo.png' },
   { nameSkill: 'Node.js', img: './images/nodeLogo.png' },
-  { nameSkill: 'GitHub', img: './images/gitHubLogo.png' },
-  { nameSkill: 'React', img: './images/React-icon.svg.png' },
-  { nameSkill: 'Cloudinary', img: './images/cloudinaryLogo.png' },
   { nameSkill: 'Express', img: './images/expressLogo.png' },
   { nameSkill: 'JWT', img: './images/JWTLogo.png' },
   { nameSkill: 'MongoDB', img: './images/mongodblogo.png' },
+  { nameSkill: 'Cloudinary', img: './images/cloudinaryLogo.png' },
+  { nameSkill: 'React', img: './images/React-icon.svg.png' },
   { nameSkill: 'TanStack Query', img: './images/TQLogo.png' },
   { nameSkill: 'Mongoose', img: './images/mongoose.png' },
-  { nameSkill: 'Tailwind', img: './images/tailwind.png' }
+  { nameSkill: 'Tailwind', img: './images/tailwind.png' },
+  { nameSkill: 'GitHub', img: './images/gitHubLogo.png' }
 ]
 
 export const projectArray = [
